@@ -16,6 +16,8 @@
   --other-color : #eaffeb ;
   --other-color-1 :#faffec;
   --other-color-2 : rgb(222, 255, 220);
+  --other-color-3: rgb(236, 255, 235);
+  --footer-color:rgb(44, 44, 44);
   --social-color: rgb(255, 255, 255);
 
   /*========== Font and typography ==========*/
@@ -484,6 +486,14 @@ img{
 }
 
 /*========== FOOTER ==========*/
+.footer {
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--other-color-1);
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
 
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -493,12 +503,11 @@ img{
 .footer__logo{
   font-size: var(--h3-font-size);
   color: var(--first-color);
-  font-weight: var(--font-semi-bold);
+  font-weight: bold;
 }
 
 .footer__description{
   display: block;
-  font-size: var(--small-font-size);
   margin: .25rem 0 var(--mb-3);
 }
 
@@ -1087,10 +1096,11 @@ button[type="submit"]:hover {
 
 .instructions {
   margin-top: 20px;
+  padding: 20px;
 }
 
 .instructions div {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /*========== MEDIA QUERIES ==========*/
